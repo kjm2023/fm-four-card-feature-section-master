@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Repo](https://github.com/kjm2023/fm-four-card-feature-section-master.git)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
