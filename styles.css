@@ -1,0 +1,151 @@
+/* Import Rules */
+
+/* - Google Font: Poppins (200, 400, 600) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* Reset Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Variables */
+
+:root {
+    /* Colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    /* Typography */
+    --font-size: 15px;
+}
+
+/* Global Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--very-light-gray);
+    color: var(--grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Styles */
+
+main {
+    min-width: 300px;
+    max-width: 1440px;
+    padding: 5%;
+    width: 80%;
+}
+
+
+h1 {
+    text-align: center; 
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--very-dark-blue);
+}
+
+.power-title {
+    font-weight: 600;
+}
+
+section p {
+    text-align: center;
+    margin: 8% 0;
+    font-size: var(--font-size);
+    line-height: 22.5px;
+    font-weight: 400;
+}
+
+.card-container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    padding: 8%;
+    margin: 5% 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 2px 2px 20px 1px rgba(76,78,97,.4);
+}
+
+.supervisor {
+    border-top: 5px solid var(--cyan);
+}
+
+.team-builder {
+    border-top: 5px solid var(--red);
+}
+
+.karma {
+    border-top: 5px solid var(--orange);
+}
+
+.calculator {
+    border-top: 5px solid var(--blue);
+}
+
+.card h2 {
+    color: var(--very-dark-blue);
+    padding-bottom: 2%;
+    font-size: 1.6rem;
+}
+
+.card img {
+    width: 20%;
+    padding: 10% 0;
+    position: relative;
+    left: 70%;
+}
+
+@media screen and (min-width: 1024px) {
+
+    main {
+        width: 80%;
+        padding: 3%;
+    }
+
+    section {
+        width: 45%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section p {
+        margin: 2% 0;
+    }
+
+    .card-container {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2%;
+    }
+
+    .card {
+        align-self: center;
+        margin-bottom: 10%;
+    }
+}
+
